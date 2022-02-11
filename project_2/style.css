@@ -1,0 +1,23 @@
+:root {
+  --primary-color: #dee2ff;
+  --secondary-color: #feeafa;
+  --primary-color-dark: #8e9aaf;
+}
+
+body {
+  background-image: url("cover_img.png");
+  background-size: 100%;
+
+}
+
+h1{
+
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  heigh: auto;
+}
