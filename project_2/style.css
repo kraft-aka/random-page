@@ -1,15 +1,19 @@
 :root {
-  --primary-color: #dee2ff;
-  --secondary-color: #feeafa;
+  --primary-color: #cbc0d3;
+  --secondary-color: #efd3d7;
   --primary-color-dark: #8e9aaf;
+  --color-pink: #feeafa;
+  --color-light-blue: #dee2ff;
 }
 
 body {
-  background-image: url("cover_img.png");
+  /* background-image: url("cover_img.png"); */
+  background-color: var(--color-pink);
   background-size: 100%;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  color: var(--primary-color-dark);
 }
 
 * {
@@ -21,16 +25,16 @@ h1 {
   font-weight: 700;
 }
 
-main {
+section {
   display: block;
   height: auto;
 }
 
-main h1 {
+section h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10%;
+  margin-top: 20%;
 }
 
 p {
@@ -41,17 +45,35 @@ p {
   margin-top: 50px;
 }
 
+a {
+  text-decoration: none;
+  color: var(--primary-color-dark);
+}
+
+nav a:hover,
+nav a:focus {
+  background-color: var(--secondary-color);
+  font-weight: 700;
+}
+
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  margin-bottom: 0;
-  margin-top: 35%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-light-blue);
+  padding: 5px;
+  text-align: center;
 }
 
 ul li {
-  display: inline-block;
-  margin-left: 15px;
+  /* display: inline-block;
+  margin-left: 15px; */
+  float: left;
+  text-align: center;
+  padding: 10px;
+  list-style-type: none;
+  font-size: inherit;
 }
 
 .button {
@@ -62,7 +84,43 @@ ul li {
   margin: 50px 0;
 }
 
+.main-navigation__page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-light-blue);
+  overflow: hidden;
+  padding: 8px 12px;
+}
+
 form input {
   width: 49%;
   height: 30px;
+}
+
+#contact {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 5px;
+}
+
+#email {
+  font-family: inherit;
+  border-radius: 10px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+}
+
+#subscribe {
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 10px;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.5);
+  background-color: var(--primary-color-dark);
+}
+
+#subscribe:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
