@@ -1,0 +1,125 @@
+:root {
+  --color-background: #faf0e6;
+  --color-header: #0b0044;
+  --color-link: #e60d89;
+  --button-submit-color: #b5e3af;
+  --button-secondary: #b2b2ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  background-color: var(--color-background);
+  color: var(--color-header);
+  text-align: center;
+  margin: auto 25%;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+span {
+  display: inline-block;
+  color: tomato;
+}
+
+span:hover {
+  background-color: var(--button-secondary);
+  /* text-transform: uppercase; */
+}
+
+input,
+select,
+button {
+  font-family: system-ui;
+}
+
+button {
+  background-color: var(--button-submit-color);
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+  color: inherit;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.3);
+}
+
+button:hover,
+button:focus {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.button__real {
+  position: relative;
+  margin-top: 50%;
+  background-color: var(--button-secondary);
+  color: #2b2b2b;
+}
+
+footer {
+  display: block;
+  background-color: var(--button-secondary);
+  width: 100%;
+  height: 30px;
+}
+
+.section-1 {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.image-1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+.image-2 {
+  float: left;
+  width: 50%;
+  height: auto;
+  padding: 10px;
+}
+
+.fixed {
+  position: fixed;
+  bottom: 5%;
+  right: 0;
+}
+
+#message {
+  resize: none;
+  width: 100%;
+  height: auto;
+}
+
+#send-it {
+  position: absolute;
+  left: 0;
+}

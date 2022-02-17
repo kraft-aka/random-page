@@ -2,11 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.button.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Random Button</title>
   </head>
   <body>
-    <div class="fancy" disabled>Sign Up!</div>
-    <button type="button" disabled class="fancy" name="button">Sign Up 4 Real!!</button>
+    <button class="button__real" type="button" name="button">Sign Up 4 Real!!</button>
+
+    <div class="fixed">
+      <label for="message">Type some Random text here</label><br>
+      <textarea name="name"id="message" maxlength="50"></textarea>
+      <form action="index.html" method="post">
+        <button type="submit" id="send-it" name="button">Send</button>
+    </div>
+
+
+    </form>
   </body>
 </html>
