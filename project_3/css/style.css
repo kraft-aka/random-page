@@ -33,11 +33,14 @@ h2 {
 
 a {
   color: var(--color-link);
+  transition: 0.8s all;
 }
 
 a:hover,
 a:focus {
   text-decoration: none;
+  background-color: var(--color-header);
+  opacity: 0.8;
 }
 
 span {
@@ -72,6 +75,7 @@ button:hover,
 button:focus {
   cursor: pointer;
   opacity: 0.8;
+  box-shadow: 5px 20px rgba(0, 0, 0, 0.5);
 }
 
 .button__real {
@@ -79,7 +83,10 @@ button:focus {
   margin-top: 50%;
   background-color: var(--button-secondary);
   color: #2b2b2b;
+  transition-duration: 0.5s;
+  transition-property: all;
 }
+
 
 footer {
   display: block;
