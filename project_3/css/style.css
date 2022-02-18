@@ -21,6 +21,13 @@ body {
   margin: auto 25%;
 }
 
+header,
+main,
+form {
+  display: grid;
+  place-content: center;
+}
+
 h1 {
   font-size: 30px;
   font-weight: 700;
